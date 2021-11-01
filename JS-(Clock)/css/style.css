@@ -1,0 +1,235 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'exo 2',sans-serif;
+}
+
+body {
+  overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../img/vecteezy_background-white_fj1220.jpg);
+  background-size: cover;
+}
+
+.content h1 {
+  top: 0;
+  right: 0%;
+  font-family: 'Pacifico', cursive;
+  font-size: 100px;
+  color: #e24071;
+  text-align: center;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #e24071, 0 0 70px #e24071, 0 0 80px #e24071, 0 0 100px #e24071, 0 0 150px #ff1177;
+}
+
+.clock {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 250px;
+  border: 10px solid #111;
+  background-color: #fff;
+  margin-left: 31%;
+  margin-top: 3%;
+}
+
+.clock::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, rgba(0, 0, 0, 0.475)), color-stop(50%, rgba(0, 0, 0, 0.1)));
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.475) 50%, rgba(0, 0, 0, 0.1) 50%);
+}
+
+.clock::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.clock .num {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 18px;
+}
+
+.clock .num::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 5px;
+  height: 15px;
+  background-color: black;
+}
+
+.clock .num1 {
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+.clock .num1 div {
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
+.clock .num2 {
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+
+.clock .num2 div {
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+}
+
+.clock .num3 {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.clock .num3 div {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.clock .num4 {
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+}
+
+.clock .num4 div {
+  -webkit-transform: rotate(-120deg);
+          transform: rotate(-120deg);
+}
+
+.clock .num5 {
+  -webkit-transform: rotate(150deg);
+          transform: rotate(150deg);
+}
+
+.clock .num5 div {
+  -webkit-transform: rotate(-150deg);
+          transform: rotate(-150deg);
+}
+
+.clock .num6 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.clock .num6 div {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.clock .num7 {
+  -webkit-transform: rotate(210deg);
+          transform: rotate(210deg);
+}
+
+.clock .num7 div {
+  -webkit-transform: rotate(-210deg);
+          transform: rotate(-210deg);
+}
+
+.clock .num8 {
+  -webkit-transform: rotate(240deg);
+          transform: rotate(240deg);
+}
+
+.clock .num8 div {
+  -webkit-transform: rotate(-240deg);
+          transform: rotate(-240deg);
+}
+
+.clock .num9 {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.clock .num9 div {
+  -webkit-transform: rotate(-270deg);
+          transform: rotate(-270deg);
+}
+
+.clock .num10 {
+  -webkit-transform: rotate(300deg);
+          transform: rotate(300deg);
+}
+
+.clock .num10 div {
+  -webkit-transform: rotate(-300deg);
+          transform: rotate(-300deg);
+}
+
+.clock .num11 {
+  -webkit-transform: rotate(330deg);
+          transform: rotate(330deg);
+}
+
+.clock .num11 div {
+  -webkit-transform: rotate(-330deg);
+          transform: rotate(-330deg);
+}
+
+.clock .hand {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.clock .hand div {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #000;
+}
+
+.clock .hand .sec {
+  width: 2px;
+  height: 40%;
+  background-color: red;
+}
+
+.clock .hand .min {
+  height: 38%;
+  width: 4px;
+  border-radius: 2px;
+}
+
+.clock .hand .hour {
+  height: 28%;
+  width: 8px;
+  border-radius: 4px;
+}
+/*# sourceMappingURL=style.css.map */

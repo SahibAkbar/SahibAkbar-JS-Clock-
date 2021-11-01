@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'exo 2',sans-serif;
+}
+body{
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    // background: linear-gradient(45deg,#ff00bf, #ffff00);
+    background-image: url(../img/vecteezy_background-white_fj1220.jpg);
+    background-size:cover ;
+}
+.content{
+    h1{
+        top: 0;
+        right: 0%;
+        font-family: 'Pacifico', cursive;
+        font-size: 100px;
+        color: #e24071;
+        text-align: center;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #e24071, 0 0 70px #e24071, 0 0 80px #e24071, 0 0 100px #e24071, 0 0 150px #ff1177;
+    }
+}
+.clock{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 250px;
+    border: 10px solid #111;
+    background-color: #fff;
+    margin-left: 31%;
+    margin-top: 3%;
+    
+    &::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: linear-gradient(270deg,rgba(0,0,0,0.475)50%,rgba(0,0,0,0.1)50%);
+
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 20px;
+        height: 20px;
+        background-color:black;
+        border-radius: 50%;
+    }
+    .num{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 600;
+        padding: 18px;  
+        &::after{
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 5px;
+            height: 15px;
+            background-color: black;
+        }
+    }
+    
+
+    .num1{
+        transform: rotate(30deg);
+        div{
+            transform: rotate(-30deg);
+        }
+    }
+    .num2{
+        transform: rotate(60deg);
+        div{
+            transform: rotate(-60deg);
+        }
+    }
+    .num3{
+        transform: rotate(90deg);
+        div{
+            transform: rotate(-90deg);
+        }
+    }
+    .num4{
+        transform: rotate(120deg);
+        div{
+            transform: rotate(-120deg);
+        }
+    }
+    .num5{
+        transform: rotate(150deg);
+        div{
+            transform: rotate(-150deg);
+        }
+    }
+    .num6{
+        transform: rotate(180deg);
+        div{
+            transform: rotate(-180deg);
+        }
+    }
+    .num7{
+        transform: rotate(210deg);
+        div{
+            transform: rotate(-210deg);
+        }
+    }
+    .num8{
+        transform: rotate(240deg);
+        div{
+            transform: rotate(-240deg);
+        }
+    }
+    .num9{
+        transform: rotate(270deg);
+        div{
+            transform: rotate(-270deg);
+        }
+    }
+    .num10{
+        transform: rotate(300deg);
+        div{
+            transform: rotate(-300deg);
+        }
+    }
+    .num11{
+        transform: rotate(330deg);
+        div{
+            transform: rotate(-330deg);
+        }
+    }
+    .hand{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        div{
+            position: absolute;
+            left: 50%;
+            bottom: 50%;
+            transform: translateX(-50%);
+            background-color: #000;
+        }
+        .sec{
+            width: 2px;
+            height: 40%;
+            background-color: red;
+        }
+        .min{
+            height: 38%;
+            width: 4px;
+            border-radius: 2px;
+        }
+        .hour{
+            height: 28%;
+            width: 8px;
+            border-radius: 4px;
+
+        }
+    }
+}
+
+
