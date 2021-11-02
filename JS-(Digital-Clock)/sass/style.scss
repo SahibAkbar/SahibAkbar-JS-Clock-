@@ -1,0 +1,26 @@
+body{
+    font-family: "work sans",sans-serif;
+    margin-left: 300px;
+    margin-top: 150px;
+    background-image: url(../img/5e4ce006591f9a010ac8e3dfe94191f1.jpg);
+    background-size: cover;
+    .time{
+        background-color: #2f4d5f;
+        color: white;
+        border: 10px solid #fffda900;
+        box-shadow: 5px 10px 20px #f00000 inset;
+        padding: 8px;
+        text-align: center;
+        width: 600px;
+        .hms{
+            font-size: 68pt;
+            font-weight: 600;
+        }
+        .ampm{
+            font-size: 22pt;
+        }
+        .date{
+            font-size: 15pt;
+        }
+    }
+}
